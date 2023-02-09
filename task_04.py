@@ -9,7 +9,7 @@ if(len(numbers) == 1):
 if(len(numbers) == 3):
     polynomial = f'{numbers[0]} * x^{deg} + {numbers[1]} * x  + {numbers[2]} = 0'
 if(len(numbers) == 2):
-    polynomial = f'{numbers[0]} * x^{deg} + {numbers[1]} * x^{deg - 1}  + x x^{-deg}= 0'
+    polynomial = f'{numbers[0]} * x^{deg} + {numbers[1]} * x^{deg - 1}  + x^{-deg}= 0'
 file = open("Polynomial.txt", "w")
 file.write(polynomial)
 file.close
